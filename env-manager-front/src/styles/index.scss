@@ -1,0 +1,247 @@
+@import './element-ui.scss';
+@import './mixin.scss';
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+//vue router transition css
+.fade-enter-active,
+.fade-leave-active {
+  transition: all .2s ease
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+
+//main-container全局样式
+.app-main{
+   min-height: 100%;
+   padding:20px;
+}
+
+.app-container {
+  padding: 20px;
+}
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+
+
+// 公共样式
+.p-filter-container{
+    // width:645px;
+    height:57px;
+    background:rgba(59, 140, 255, 0.3);
+    border-radius: 10px 10px 0px 0px ;
+    color:white;
+    line-height:57px;
+    display: flex;
+    justify-content:space-between;
+    padding-left:20px;
+    padding-right: 20px;
+    font-size: 14px;
+}
+.p-input{
+    width:260px;
+    height:30px;
+    background:rgba(255,255,255,0.1);
+    border-radius: 2px ;
+    padding-left: 20px;
+    color:#fff;
+    border: none;
+    margin-top:14px;
+    &::-webkit-input-placeholder { color:#fff; }
+}
+
+.p-input-wrapper::after{
+    background: url(./assets/img/ic_input_search.png);
+    height: 16px;
+    width: 16px;
+    content:' ';
+    position: relative;
+    right: 40px;
+    top: 1px;
+    display: inline-block;
+}
+
+.p-table-name{
+    // width:
+
+}
+
+.p-add-btn{
+    width:76px;
+    height:30px;
+    line-height: 30px;
+    margin-top:14px;
+    background:rgba(255,255,255,0.1);
+    border-radius: 2px ;
+    border:1px solid #fff;
+    text-align: center;
+}
+
+
+.p-oneline {
+    overflow: hidden;
+    text-align: center;
+}
+
+.layer__dialog{
+  text-align: left;
+}
+
+.p-tree-icon{
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    // border:1px solid red;
+    // background: #0f0;
+    background-size: contain !important;
+    margin-right: 6px;
+    // 图标居中对齐
+    vertical-align: middle;
+}
+// ["precinct", "building","floor","room","site", "device","fsu", "ipc"];
+.p-tree-icon.precinct{
+    background:url(./assets/img/ic_precinct.png); 
+}
+.p-tree-icon.building{
+    background:url(./assets/img/ic_building.png); 
+    
+}
+.p-tree-icon.floor{
+    background:url(./assets/img/ic_floor.png); 
+}
+.p-tree-icon.room{
+    background:url(./assets/img/ic_room.png); 
+}
+.p-tree-icon.site{
+    background:url(./assets/img/ic_site.png); 
+}
+
+// 图标
+.p-tree-icon.device{
+    background:url(./assets/img/ic_device.png); 
+}
+.p-tree-icon.fsu{
+    background:url(./assets/img/ic_fsu.png); 
+}
+.p-tree-icon.ipc{
+    background:url(./assets/img/ic_ipc.png); 
+}
+
+
+// 设备模板树  
+// devicekind devicetype devicemodel ->  四遥  系统监控
+.p-tree-icon.devicekind{
+    background:url(./assets/img/ic_devicekind.png); 
+}
+.p-tree-icon.devicetype{
+    background:url(./assets/img/ic_devicetype.png); 
+}
+.p-tree-icon.devicemodel{
+    background:url(./assets/img/ic_devicemodel.png); 
+}
+
+
+
+
+
+
+
+
+
+// 滚动条的样式更改
+.el-table__body-wrapper::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+}
+.el-table__body-wrapper::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(59, 140, 255, 0.3);
+    // background-color: #e0e0e0;
+    background-color: #314997;
+}
+.el-table__body-wrapper::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(59, 140, 255, 0.3);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+.p-dialog-footer{
+    text-align: center;
+}
+
+
+.p-white{
+    color:white;
+}
+
+.p-h20{
+    width: 100%;
+    padding: 10px 0;
+}
+.p-gap-20{
+    margin-top:20px;
+    width: 100%; 
+}
+.p-h40{
+    width: 100%;
+    height: 40px;
+}
